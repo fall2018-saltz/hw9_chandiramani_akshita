@@ -15,5 +15,9 @@ clean_data$hotelCleanBuckets <- replicate(length(clean_data$hotelClean), "Averag
 clean_data$hotelCleanBuckets[clean_data$hotelClean > 7] <- "High"
 clean_data$hotelCleanBuckets[clean_data$hotelClean < 7] <- "Low"
 
+clean_data$hotelFriendlyBuckets <- replicate(length(clean_data$hotelFriendly), "Average")
+clean_data$hotelFriendlyBuckets[clean_data$hotelFriendly > 7] <- "High"
+clean_data$hotelFriendlyBuckets[clean_data$hotelFriendly < 7] <- "Low"
+
 str(clean_data)
 
