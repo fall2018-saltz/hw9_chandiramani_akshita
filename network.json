@@ -7,7 +7,7 @@
         {
             "ports": [
                 {
-                    "output": "hotelSurvery",
+                    "output": "hotelSurvey",
                     "type": "csv"
                 }
             ],
@@ -25,6 +25,6 @@
             "name": "data.csv"
         }
     ],
-    "updated_at": "2018-11-04 22:05:35",
+    "updated_at": "2018-11-04 22:06:14",
     "url": "https://github.com/fall2018-saltz/hw9_chandiramani_akshita"
 }
