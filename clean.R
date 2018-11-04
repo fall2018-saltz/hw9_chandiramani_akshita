@@ -45,6 +45,6 @@ str(clean_data)
 table(clean_data$guestAgeBuckets)
 prop.table(table(clean_data$guestAgeBuckets))
 table(clean_data$hotelFriendlyBuckets)
-prop.table(table(clean_data$hotelFriendlyBuckets))
+prop.table(table(clean_data$hotelFriendlyBuckets, dnn = "Observations per diet"))
 
 prop.table(table(clean_data$hotelFriendlyBuckets, clean_data$CustSatBuckets))
