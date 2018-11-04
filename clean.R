@@ -46,3 +46,5 @@ table(clean_data$guestAgeBuckets)
 prop.table(table(clean_data$guestAgeBuckets))
 table(clean_data$hotelFriendlyBuckets)
 prop.table(table(clean_data$hotelFriendlyBuckets))
+
+prop.table(table(clean_data$hotelFriendlyBuckets, clean_data$CustSatBuckets))
