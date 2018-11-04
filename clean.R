@@ -30,6 +30,11 @@ clean_data$guestAgeBuckets <- replicate(length(clean_data$guestAge), "Average")
 clean_data$guestAgeBuckets[clean_data$guestAge <= q[1]] <- "Low"
 clean_data$guestAgeBuckets[clean_data$guestAge > q[2]] <- "High"
 
+q <- quantile(clean_data$lengthOfStay, c(0.4, 0.6))
+clean_data$lengthOfStayBuckets <- replicate(length(clean_data$lengthOfStay), "Average")
+clean_data$lengthOfStayBuckets[clean_data$lengthOfStay <= q[1]] <- "Low"
+clean_data$lengthOfStayBuckets[clean_data$lengthOfStay > q[2]] <- "High"
+
 str(clean_data)
 
 
