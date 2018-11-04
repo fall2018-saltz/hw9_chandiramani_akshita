@@ -42,4 +42,5 @@ clean_data$whenBookedTripBuckets[clean_data$whenBookedTrip > q[2]] <- "High"
 
 str(clean_data)
 
+table(clean_data$guestAgeBuckets)
 
