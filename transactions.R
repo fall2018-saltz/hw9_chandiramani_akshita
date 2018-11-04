@@ -1,5 +1,5 @@
 
 library("arules")
 library("arulesViz")
-data("hotelSurvey")
+data(hotelSurvey)
 hotelSurveyX <- as (hotelSurvey,"transactions")
