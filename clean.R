@@ -43,8 +43,8 @@ clean_data$whenBookedTripBuckets[clean_data$whenBookedTrip > q[2]] <- "High"
 str(clean_data)
 
 table(clean_data$guestAgeBuckets)
-prop.table(table(clean_data$guestAgeBuckets))
+prop.table(table(clean_data$guestAgeBuckets), dnn = "Percentage in different age groups")
 table(clean_data$hotelFriendlyBuckets)
-prop.table(table(clean_data$hotelFriendlyBuckets, dnn = "Observations per diet"))
+prop.table(table(clean_data$hotelFriendlyBuckets, dnn = "Percentage in different hotel friendly buckets"))
 
 prop.table(table(clean_data$hotelFriendlyBuckets, clean_data$CustSatBuckets))
