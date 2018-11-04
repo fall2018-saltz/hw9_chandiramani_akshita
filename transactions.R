@@ -1,3 +1,3 @@
 
 library(arules)
-arules and arulesViz
+library(arulesViz)
