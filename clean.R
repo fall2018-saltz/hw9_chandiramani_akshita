@@ -29,3 +29,4 @@ clean_data$hotelStateBuckets <- replicate(length(clean_data$hotelState), "Averag
 clean_data$hotelStateBuckets[clean_data$hotelState <= q[1]] <- "Low"
 clean_data$hotelStateBuckets[clean_data$hotelState > q[2]] <- "High"
 
+str(clean_data)
