@@ -38,7 +38,7 @@ clean_data$lengthOfStayBuckets[clean_data$lengthOfStay > q[2]] <- "High"
 q <- quantile(clean_data$whenBookedTrip, c(0.4, 0.6))
 clean_data$whenBookedTripBuckets <- replicate(length(clean_data$whenBookedTrip), "Average")
 clean_data$whenBookedTripBuckets[clean_data$whenBookedTrip <= q[1]] <- "Low"
-clean_data$lwhenBookedTripBuckets[clean_data$whenBookedTrip > q[2]] <- "High"
+clean_data$whenBookedTripBuckets[clean_data$whenBookedTrip > q[2]] <- "High"
 
 str(clean_data)
 
