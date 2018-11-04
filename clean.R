@@ -7,9 +7,9 @@ clean_data$CustSatBuckets <- replicate(length(clean_data$overallCustSat), "Avera
 clean_data$CustSatBuckets[clean_data$overallCustSat > 7] <- "High"
 clean_data$CustSatBuckets[clean_data$overallCustSat < 7] <- "Low"
 
-clean_data$checkinSatBuckets <- replicate(length(checkinSat), "Average")
-clean_data$checkinSatBuckets[checkinSat > 7] <- "High"
-clean_data$checkinSatBuckets[checkinSat < 7] <- "Low"
+clean_data$checkinSatBuckets <- replicate(length(clean_data$checkinSat), "Average")
+clean_data$checkinSatBuckets[clean_data$checkinSat > 7] <- "High"
+clean_data$checkinSatBuckets[clean_data$checkinSat < 7] <- "Low"
 
 clean_data$hotelCleanBuckets <- replicate(length(clean_data$hotelClean), "Average")
 clean_data$hotelCleanBuckets[clean_data$hotelClean > 7] <- "High"
