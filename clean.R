@@ -25,9 +25,6 @@ clean_data$hotelSizeBuckets <- replicate(length(clean_data$hotelSize), "Average"
 clean_data$hotelSizeBuckets[clean_data$hotelSize <= q[1]] <- "Low"
 clean_data$hotelSizeBuckets[clean_data$hotelSize > q[2]] <- "High"
 
-q <- quantile(clean_data$hotelState, c(0.4, 0.6))
-clean_data$hotelStateBuckets <- replicate(length(clean_data$hotelState), "Average")
-clean_data$hotelStateBuckets[clean_data$hotelState <= q[1]] <- "Low"
-clean_data$hotelStateBuckets[clean_data$hotelState > q[2]] <- "High"
+str(clean_data)
 
 
