@@ -44,3 +44,4 @@ str(clean_data)
 
 table(clean_data$guestAgeBuckets)
 
+table(clean_data$hotelFriendlyBuckets)
