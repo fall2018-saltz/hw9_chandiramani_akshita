@@ -8,21 +8,22 @@
             "ports": [
                 {
                     "output": "hotelSurvey",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "transactions.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "hotelSurvey",
                     "type": "csv"
                 }
             ],
             "source": "transactions.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "hotelSurvey",
+                    "output": "hotelSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "transactions.R"
         }
     ],
     "nodes": [
@@ -39,6 +40,6 @@
             "name": "transactions.R"
         }
     ],
-    "updated_at": "2018-11-04 22:09:42",
+    "updated_at": "2018-11-04 22:09:58",
     "url": "https://github.com/fall2018-saltz/hw9_chandiramani_akshita"
 }
