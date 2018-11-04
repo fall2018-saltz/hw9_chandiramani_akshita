@@ -6,6 +6,7 @@ clean_data <- data.frame(JsonData)
 clean_data$CustSatBuckets <- replicate(length(clean_data$overallCustSat), "Average")
 clean_data$CustSatBuckets[clean_data$overallCustSat > 7] <- "High"
 clean_data$CustSatBuckets[clean_data$overallCustSat < 7] <- "Low"
+str(clean_data)
 
 clean_data$checkinSatBuckets <- replicate(length(clean_data$checkinSat), "Average")
 clean_data$checkinSatBuckets[clean_data$checkinSat > 7] <- "High"
