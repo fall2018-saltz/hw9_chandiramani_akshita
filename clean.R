@@ -47,4 +47,4 @@ prop.table(table(clean_data$guestAgeBuckets, dnn = "Percentage in different age 
 table(clean_data$hotelFriendlyBuckets)
 prop.table(table(clean_data$hotelFriendlyBuckets, dnn = "Percentage in different hotel friendly buckets"))
 
-prop.table(table(clean_data$hotelFriendlyBuckets, clean_data$CustSatBuckets))
+prop.table(table(clean_data$hotelFriendlyBuckets, clean_data$CustSatBuckets, dnn = c("hotelFriendly", "Customer Satisfaction")))
